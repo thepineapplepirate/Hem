@@ -20,11 +20,11 @@ def Hamiltonian(in_file, OutFile):
                 h.append(i)
  
         if len(h)  == 1:
-            #hem_1_ord[h[0]] = float(''.join(line.split('*')[0].split(' ')))
-            hem_1_ord[h[0]] = float(line.split('*')[0])
+            hem_1_ord[h[0]] = float(''.join(line.split('*')[0].split(' ')))
+            #hem_1_ord[h[0]] = float(line.split('*')[0])
         elif len(h) > 1:
-            #hem_higher_ord[tuple(h)] = float(''.join(line.split('*')[0].split(' ')))
-            hem_higher_ord[tuple(h)] = float(line.split('*')[0])
+            hem_higher_ord[tuple(h)] = float(''.join(line.split('*')[0].split(' ')))
+            #hem_higher_ord[tuple(h)] = float(line.split('*')[0])
 
     with open(OutFile, "w") as f:
         f.write("[")
